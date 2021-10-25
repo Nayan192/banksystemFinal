@@ -18,7 +18,7 @@
             <label><b>USER ID &nbsp</b></label> 
             <input type="password" class="loginform-control" name="userid" id="userid" required><br><br></p>
             <button class="loginform-button" type="submit" >Login</button><br><br>
-            <a href="createUser.html">Create a new account</a>
+            <a href="createUser.php">Create a new account</a>
         </form>
     </div>
 </body>
