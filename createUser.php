@@ -1,6 +1,6 @@
 <?php
     $insert=false;
-    if(isset($_POST['name'])){
+    if(isset($_POST['firstname'])){
 
     // $server ="localhost";
     // $username="root";
