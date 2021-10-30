@@ -46,6 +46,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/createUser.css">
     <title>Document</title>
 </head>
 <body>
@@ -55,16 +56,25 @@
                 echo  "<p>Welcome OnBoard </p>";
             }
     ?>
-    <h1>NEW USER</h1>
-    <form class="main-form" method="post">
-        <input type="text" name="firstname" id="firstname" placeholder="First Name" required><br>
-        <input type="text" name="lastname" id="lastname" placeholder="Last Name" required><br>
-        <input type="age" name="age" id="age" placeholder="Age" required><br>
-        <input type="text" name="gender" id="gender" placeholder="Gender" required><br>
-        <input type="phone" name="phone" id="phone" placeholder="Phone" required><br>
-        <input type="email" name="email" id="email" placeholder="Email" required><br>
-        <input type="city" name="city" id="city" placeholder="city" required><br>
+    <div class="background">
+    <h1 class="mainheading">CREATE NEW USER</h1><br>
+    <form class="createUserform" method="post">
+        <label><b>First Name</b> </label><br>
+        <input class="createUser-control" type="text" name="firstname" id="firstname"required><br><br>
+        <label><b>Last Name</b> </label><br>
+        <input class="createUser-control" type="text" name="lastname" id="lastname"  required><br><br>
+        <label><b>Age</b> </label><br>
+        <input class="createUser-control" type="age" name="age" id="age"  required><br><br>
+        <label><b>Gender</b> </label><br>
+        <input class="createUser-control" type="text" name="gender" id="gender"  required><br><br>
+        <label><b>Phone Number</b> </label><br>
+        <input class="createUser-control" type="phone" name="phone" id="phone" required><br><br>
+        <label><b>Email</b> </label><br>
+        <input class="createUser-control" type="email" name="email" id="email" required><br><br>
+        <label><b>City </b> </label><br>
+        <input class="createUser-control" type="city" name="city" id="city" required><br><br>
         <button class="submit-button">Submit</button>
     </form>
+</div>
 </body>
 </html>
