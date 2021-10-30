@@ -26,8 +26,8 @@
     $phone=$_POST['phone'];
     $email=$_POST['email'];
     $city=$_POST['city'];
-    $sql ="INSERT INTO `DshHNFZcBN`.`user` (`firstname`, `lastname`, `age`, `gender`, `phone`, `email`, `city`,) VALUES (`firstname`, `lastname`, `age`, `gender`, `phone`, `email`, `city`);"
-    // echo $sql;
+    $sql ="INSERT INTO `DshHNFZcBN`. `user` ( `userid`,`firstname`, `lastname`, `age`, `gender`, `phone`, `email`, `city`,`date`) VALUES ( NULL,'$firstname', '$lastname', '$age', '$gender', '$phone', '$email', '$city', CURRENT_TIMESTAMP); "; 
+  
     if($con->query($sql)==true)
     {
         $insert=true;
