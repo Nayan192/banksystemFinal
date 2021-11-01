@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This is HomePage</h1>
+    <button><a href="allusers.php">show all users</a></button> 
 </body>
 </html>

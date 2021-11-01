@@ -17,9 +17,8 @@
             <input type="text" class="loginform-control" name="name" id="name" required><br><br></p>
             <label><b>USER ID &nbsp</b></label> 
             <input type="password" class="loginform-control" name="userid" id="userid" required><br><br></p>
-            <button class="loginform-button" type="submit" >Login</button><br><br>
+            <button class="loginform-button" type="submit" ><a href="homepage.php">Login</a></button><br><br>
             <a href="createUser.php">Create a new account</a>
-            <a href="allusers.php">show all users</a>
 
         </form>
     </div>
