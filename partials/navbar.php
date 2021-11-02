@@ -14,7 +14,7 @@
         </li>
       </ul>
       <form class="d-flex">
-        <button class="btn btn-outline-success" type="submit">LOG OUT</button>
+        <button class="btn btn-outline-success" type="submit"><a href="logout.php">LOG OUT</button>
       </form>
     </div>
   </div>

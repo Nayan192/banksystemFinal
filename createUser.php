@@ -1,8 +1,8 @@
 <?php
+    $s=false;
     if($_SERVER["REQUEST_METHOD"]=="POST")
     {
         include 'partials/_dbconnect.php';
-        $s=false;
         $firstname=$_POST['firstname'];
         $lastname=$_POST['lastname'];
         $age=$_POST['age'];
@@ -10,9 +10,10 @@
         $phone=$_POST['phone'];
         $email=$_POST['email'];
         $city=$_POST['city'];
+        $balance=$_POST['balance'];
         $password=$_POST['password'];
         //$sql ="INSERT INTO `DshHNFZcBN`. `user` ( `userid`,`firstname`, `lastname`, `age`, `gender`, `phone`, `email`, `city`,`date`) VALUES ( NULL,'$firstname', '$lastname', '$age', '$gender', '$phone', '$email', '$city', CURRENT_TIMESTAMP); "; 
-        $sql="INSERT INTO `user` (`userid`, `firstname`, `lastname`, `age`, `gender`, `phone`, `email`, `city`, `date`, `password`) VALUES (NULL,'$firstname', '$lastname', '$age', '$gender', '$phone', '$email', '$city', CURRENT_TIMESTAMP, '$password');" ;
+        $sql="INSERT INTO `user` (`userid`, `firstname`, `lastname`, `age`, `gender`, `phone`, `email`, `city`, `date`,`balance`, `password`) VALUES (NULL,'$firstname', '$lastname', '$age', '$gender', '$phone', '$email', '$city', CURRENT_TIMESTAMP,'$balance', '$password');" ;
         $result=mysqli_query($conn,$sql);
         if($result){
             $s=true;
@@ -35,8 +36,8 @@
     <?php
     if($s){   
        echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
-     <strong>sucess</strong> your account is now created and you can now login
-     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+     <strong>sucess</strong> Your account is now created and You can now login
+     <a href="index.php">NEXT</a>
     </div>';
     }
     ?>
@@ -55,9 +56,11 @@
         <input class="createUser-control" type="email" name="email" id="email" required><br><br>
         <label><b>City </b> </label><br>
         <input class="createUser-control" type="city" name="city" id="city" required><br><br>
+        <label><b>Balance </b> </label><br>
+        <input class="createUser-control" type="balance" name="balance" id="balance" required><br><br>
         <label><b>Password </b> </label><br>
         <input class="createUser-control" type="password" name="password" id="password" required><br><br>
-        <button class="submit-button">Submit</button>
+        <button class="submit-button">SUBMIT</button>
     </form>
 </div>
 </body>

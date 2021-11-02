@@ -1,3 +1,12 @@
+<?php
+    session_start();// isset checks if variable is set or not
+    if(!isset($_SESSION['loggedin']) ||$_SESSION['loggedin']!=true){
+        header("location:index.php");
+        exit;
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,5 +19,6 @@
 <body>
     <?php require 'partials/navbar.php'?>
     <center><button><a href="allusers.php">show all users</a></button></center> 
+    welcome-<?php echo $_SESSION['userid']?>
 </body>
 </html>
